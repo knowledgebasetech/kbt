@@ -2,6 +2,7 @@ import { useRouter } from "next/router";
 import Link from "next/link";
 import Layout from "../../components/layout";
 import BreadCrumbs from "../../components/breadCrumbs";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   getCategoriesBySlug,
   getCategories,
@@ -18,9 +19,16 @@ export default function Post({ category, articles }) {
     <Layout>
       <div className="max-w-4xl mt-6 sm:w-full mx-auto">
         <BreadCrumbs category={category} article={null} />
-        <div className="p-6 mt-6 text-left border w-full bg-gray-200 rounded-xl ">
-          <h3 className="text-2xl font-bold">{category.title}</h3>
-          <p className="mt-4 text-xl">{category.summary}</p>
+        <div className="p-6 mt-6 text-left border w-full bg-gray-200 rounded-xl flex">
+          {category.icon && (
+            <div className="text-3xl font-bold p-10 flex items-center justify-center">
+              <FontAwesomeIcon icon={category.icon} />
+            </div>
+          )}
+          <div>
+            <h3 className="text-2xl font-bold">{category.title}</h3>
+            <p className="mt-4 text-xl">{category.summary}</p>
+          </div>
         </div>
         <div className="flex flex-wrap items-center justify-around">
           {articles.map((article) => (

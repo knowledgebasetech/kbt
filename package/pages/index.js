@@ -1,5 +1,8 @@
 import Layout from "../components/layout";
 import Link from "next/link";
+import Icon from "../components/Icon";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import { getCategories } from "../lib/api";
 
 export default function Home({ categories }) {
@@ -13,9 +16,16 @@ export default function Home({ categories }) {
               as={`/${category.folder}`}
               href="/[categorySlug]/"
             >
-              <div className="p-6 mt-6 text-left border w-full bg-white rounded-xl hover:text-primary-600 focus:text-primary-600">
-                <h3 className="text-2xl font-bold">{category.title}</h3>
-                <p className="mt-4 text-xl">{category.summary}</p>
+              <div className="p-6 mt-6 text-left border w-full bg-white rounded-xl hover:text-primary-600 focus:text-primary-600 flex">
+                {category.icon && (
+                  <div className="text-3xl font-bold p-10 flex items-center justify-center">
+                    <FontAwesomeIcon icon={category.icon} />
+                  </div>
+                )}
+                <div>
+                  <h3 className="text-2xl font-bold">{category.title}</h3>
+                  <p className="mt-4 text-xl">{category.summary}</p>
+                </div>
               </div>
             </Link>
           ))}

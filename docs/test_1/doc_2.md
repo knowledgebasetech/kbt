@@ -9,10 +9,6 @@ altera_, serpentis gemitus et exsultat stemus. Ut solitaeque fama; tunc suo est
 cultros genitas longis, aequor ira habebat balatus harenas resumere. Olor quae'
 ---
 
-# Foresque senis
-
-## Illa res esse accipit struxerit inferias atque
-
 Lorem markdownum exigit peragunt timore novit ad _tua alta eburnae_? Vulnera mea
 _suo iram_ dispar illa monilia, et flammis coniuge, Eurynome [discede
 fraudes](http://sine.org/aurorae) ac et. Sapientius velamina protinus laevane
