@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 export default function Header() {
   return (
     <header className="flex-shrink-0">
-      <div className="bg-primary-900 ">
+      <div className="bg-gray-900">
         <div className="max-w-4xl container mx-auto py-6 px-4 md:px-0 ">
           <div className="flex flex-col-reverse md:flex-row md:justify-between items-center">
             <h1 className="text-white font-bold text-xl pt-4 md:pt-0">
@@ -44,15 +44,17 @@ export default function Header() {
               </a>
             </div>
           </div>
-          <label className="inline-block pt-4 md:pt-6 text-primary-100">
-            A simple tool to build knowledge base
-          </label>
-          <input
-            type="text"
-            className="mt-2 w-full rounded focus:outline-none focus:ring text-lg py-3 px-4 shadow-lg"
-            placeholder="Search for articles..."
-            name="search"
-          ></input>
+          <div className="pt-6 pb-4">
+            <label className="inline-block md:pt-6 text-primary-100">
+              A simple tool to build knowledge base
+            </label>
+            <input
+              type="text"
+              className="mt-2 w-full rounded focus:outline-none focus:ring ring-primary-500 text-lg py-3 px-4 shadow-lg"
+              placeholder="Search for articles..."
+              name="search"
+            ></input>
+          </div>
         </div>
       </div>
     </header>
