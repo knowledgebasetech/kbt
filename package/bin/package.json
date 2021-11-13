@@ -1,0 +1,11 @@
+{
+  "private": true,
+  "dependencies": {
+    "knowledgebasetech": "^0.0.4"
+  },
+  "scripts": {
+    "dev": "cd .knowledgeBase && npm run dev",
+    "build": "knowledgebasetech kbt-build",
+    "export": "knowledgebasetech kbt-export"
+  }
+}
