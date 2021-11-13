@@ -13,7 +13,7 @@ export default function Home({ categories }) {
               as={`/${category.folder}`}
               href="/[categorySlug]/"
             >
-              <div className="p-6 mt-6 text-left border w-full bg-white rounded-xl hover:text-blue-600 focus:text-blue-600">
+              <div className="p-6 mt-6 text-left border w-full bg-white rounded-xl hover:text-primary-600 focus:text-primary-600">
                 <h3 className="text-2xl font-bold">{category.title}</h3>
                 <p className="mt-4 text-xl">{category.summary}</p>
               </div>

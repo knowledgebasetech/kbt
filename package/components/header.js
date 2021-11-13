@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 export default function Header() {
   return (
     <header className="flex-shrink-0">
-      <div className="bg-indigo-900 ">
+      <div className="bg-primary-900 ">
         <div className="max-w-4xl container mx-auto py-6 px-4 md:px-0 ">
           <div className="flex flex-col-reverse md:flex-row md:justify-between items-center">
             <h1 className="text-white font-bold text-xl pt-4 md:pt-0">
@@ -22,7 +22,7 @@ export default function Header() {
                 target="_blank"
                 rel="noopener"
                 href="https://Knowledgebase.tech/"
-                className="px-3 py-2 border border-transparent rounded flex space-x-2 items-center bg-indigo-100 bg-opacity-10 hover:bg-opacity-20 hover:shadow-lg transition"
+                className="px-3 py-2 border border-transparent rounded flex space-x-2 items-center bg-primary-100 bg-opacity-10 hover:bg-opacity-20 hover:shadow-lg transition"
               >
                 <span>
                   <svg
@@ -44,7 +44,7 @@ export default function Header() {
               </a>
             </div>
           </div>
-          <label className="inline-block pt-4 md:pt-6 text-indigo-100">
+          <label className="inline-block pt-4 md:pt-6 text-primary-100">
             A simple tool to build knowledge base
           </label>
           <input

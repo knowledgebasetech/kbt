@@ -29,7 +29,7 @@ export default function Post({ category, articles }) {
               as={`/${category.folder}/${article.slug}`}
               href="/[categorySlug]/[slug]"
             >
-              <div className="p-6 mt-6 text-left border w-full bg-white rounded-xl hover:text-blue-600 focus:text-blue-600">
+              <div className="p-6 mt-6 text-left border w-full bg-white rounded-xl hover:text-primary-600 focus:text-primary-600">
                 <h3 className="text-2xl font-bold">{article.title}</h3>
                 <p className="mt-4 text-xl">{article.summary}</p>
               </div>
