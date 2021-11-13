@@ -1,12 +1,13 @@
 {
   "private": true,
   "dependencies": {
-    "@knowledgebase/docs": "^0.0.2"
+    "knowledgebasetech": "^0.0.2"
   },
   "scripts": {
     "dev": "cd .knowledgeBase && npm run dev",
-    "build": "cd .knowledgeBase && next build",
-    "start": "cd .knowledgeBase && next start",
-    "export": "cd .knowledgeBase && next export"
+    "build": "cd .knowledgeBase && npm run next build",
+    "start": "cd .knowledgeBase && npm run next start",
+    "export": "cd .knowledgeBase && npm run export",
+    "init-a": "knowledgebasetech"
   }
 }

@@ -1,6 +1,6 @@
 {
-  "name": "@knowledgebase/docs",
-  "version": "0.0.4",
+  "name": "knowledgebasetech",
+  "version": "0.0.2",
   "description": "Modern open-source knowledge base builder",
   "keywords": [
     "knowledge base",
@@ -15,7 +15,7 @@
   "license": "MIT",
   "main": "bin/knowledgebase.js",
   "bin": {
-    "@knowledgebase/docs": "bin/knowledgebase.js"
+    "knowledgebasetech": "bin/knowledgebase.js"
   },
   "publishConfig": {
     "access": "public"
@@ -24,7 +24,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "export": "next build && next export -o ../.build"
+    "export": "next build && next export -o ../.build",
+    "init-try": "bin/knowledgebase.js"
   },
   "repository": {
     "type": "git",
