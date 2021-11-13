@@ -8,7 +8,7 @@ export default function Layout({ children }) {
       <Meta />
       <div className="min-h-full flex flex-col items-stretch">
         <Header />
-        <main className="flex-grow bg-gray-50 md:py-10">{children}</main>
+        <main className="flex-grow bg-gray-50 py-6 md:py-10">{children}</main>
         <Footer />
       </div>
     </>
