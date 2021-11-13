@@ -1,6 +1,6 @@
 {
   "name": "knowledgebasetech",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "Modern open-source knowledge base builder",
   "keywords": [
     "knowledge base",
@@ -24,8 +24,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "export": "next build && next export -o ../.build",
-    "init-try": "bin/knowledgebase.js"
+    "export": "next build && next export -o ../.build"
   },
   "repository": {
     "type": "git",
