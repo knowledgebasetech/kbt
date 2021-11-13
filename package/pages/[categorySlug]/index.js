@@ -7,7 +7,6 @@ import {
   getCategories,
   getCategoryArticles,
 } from "../../lib/api";
-import RenderArticle from "../../components/renderArticle";
 import markdownToHtml from "../../lib/markdownToHtml";
 
 export default function Post({ category, articles }) {
@@ -27,8 +26,8 @@ export default function Post({ category, articles }) {
           {articles.map((article) => (
             <Link
               key={article.slug}
-              as={`${category.slug}/${article.slug}`}
-              href="[categorySlug]/[...slug]"
+              as={`/${category.folder}/${article.slug}`}
+              href="/[categorySlug]/[slug]"
             >
               <div className="p-6 mt-6 text-left border w-full bg-white rounded-xl hover:text-blue-600 focus:text-blue-600">
                 <h3 className="text-2xl font-bold">{article.title}</h3>
@@ -63,7 +62,7 @@ export async function getStaticPaths() {
   getCategories().map((category) => {
     paths.push({
       params: {
-        categorySlug: category.slug,
+        categorySlug: category.folder,
       },
     });
   });

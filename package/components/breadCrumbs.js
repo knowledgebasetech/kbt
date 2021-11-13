@@ -38,7 +38,7 @@ export default function BreadCrumbs({ category, article }) {
                 clipRule="evenodd"
               />
             </svg>
-            <Link as={`${category.slug}`} href="[categorySlug]">
+            <Link as={`/${category.folder}`} href="/[categorySlug]">
               <span className="ml-4 text-sm font-medium text-gray-500 hover:text-gray-700">
                 {category.title}
               </span>
@@ -63,8 +63,8 @@ export default function BreadCrumbs({ category, article }) {
               </svg>
               <Link
                 key={article.slug}
-                as={`${category.slug}/${article.slug}`}
-                href="[categorySlug]/[...slug]"
+                as={`/${article.folder}/${article.slug}`}
+                href="[categorySlug]/[slug]"
               >
                 <span className="ml-4 text-sm font-medium text-gray-500 hover:text-gray-700">
                   {article.title}
