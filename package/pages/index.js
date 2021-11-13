@@ -1,6 +1,5 @@
 import Layout from "../components/layout";
 import Link from "next/link";
-import Icon from "../components/Icon";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { getCategories } from "../lib/api";
