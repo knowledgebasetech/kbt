@@ -6,22 +6,28 @@ const cli = require("commander");
 const shell = require("shelljs");
 
 cli
-  .command("init")
+  .command("init [projectName]")
   .description("Create a new project")
-  .action((siteDir, {}) => {
-    shell.exec("mkdir foo1");
-    shell.exec("cd foo1");
-    shell.exec(
-      "wget -O package.json https://raw.githubusercontent.com/knowledgebasetech/kbt/main/package/bin/package.json"
-    );
-    shell.exec(
-      "wget -O .gitignore https://raw.githubusercontent.com/knowledgebasetech/kbt/main/package/bin/.gitignore"
-    );
-    shell.exec("npm i");
-    shell.exec("cp -a node_modules/knowledgebasetech/. .knowledgeBase/");
-    shell.exec("cd .knowledgeBase");
-    shell.exec("npm i");
-    console.log("Wohoo!! Try running the server");
+  .action((projectName, {}) => {
+    if (projectName) {
+      shell.exec(`mkdir ${projectName}`);
+      shell.exec(`mkdir ${projectName}/docs`);
+      shell.exec(
+        `wget -O ${projectName}/package.json https://raw.githubusercontent.com/knowledgebasetech/kbt/main/package/bin/package.json`
+      );
+      shell.exec(
+        `wget -O ${projectName}/.gitignore https://raw.githubusercontent.com/knowledgebasetech/kbt/main/package/bin/.gitignore`
+      );
+      shell.exec(`cd ${projectName} && npm i`);
+      shell.exec(
+        `cp -a ${projectName}/node_modules/@knowledgebase/docs/. ${projectName}/.knowledgeBase/`
+      );
+      shell.exec(`cd ${projectName}/.knowledgeBase && npm i`);
+      shell.exec(`cd ${projectName}/.knowledgeBase && ln -s ../docs docs`);
+      console.log("Wohoo!! Try running the server");
+    } else {
+      console.log("Please input a project name");
+    }
   });
 
 cli
