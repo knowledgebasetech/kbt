@@ -12,10 +12,10 @@ cli
     shell.exec("mkdir foo1");
     shell.exec("cd foo1");
     shell.exec(
-      "wget -O package.json https://raw.githubusercontent.com/knowledgebasetech/kbt/tree/main/package/bin/package.json"
+      "wget -O package.json https://raw.githubusercontent.com/knowledgebasetech/kbt/main/package/bin/package.json"
     );
     shell.exec(
-      "wget -O .gitignore https://raw.githubusercontent.com/knowledgebasetech/kbt/tree/main/package/bin/.gitignore"
+      "wget -O .gitignore https://raw.githubusercontent.com/knowledgebasetech/kbt/main/package/bin/.gitignore"
     );
     shell.exec("npm i");
     shell.exec("cp -a node_modules/knowledgebasetech/. .knowledgeBase/");
