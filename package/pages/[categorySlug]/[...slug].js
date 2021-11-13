@@ -1,8 +1,8 @@
 import { useRouter } from "next/router";
-import Layout from "../components/layout";
-import { getArticleBySlug, getArticles } from "../lib/api";
-import RenderArticle from "../components/renderArticle";
-import markdownToHtml from "../lib/markdownToHtml";
+import Layout from "../../components/layout";
+import { getArticleBySlug, getArticles } from "../../lib/api";
+import RenderArticle from "../../components/renderArticle";
+import markdownToHtml from "../../lib/markdownToHtml";
 
 export default function Post({ article }) {
   const router = useRouter();
