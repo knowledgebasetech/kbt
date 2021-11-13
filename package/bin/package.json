@@ -5,7 +5,7 @@
   },
   "scripts": {
     "dev": "cd .knowledgeBase && npm run dev",
-    "build": "knowledgebasetech kba-build",
-    "export": "knowledgebasetech kba-export"
+    "build": "knowledgebasetech kbt-build",
+    "export": "knowledgebasetech kbt-export"
   }
 }
