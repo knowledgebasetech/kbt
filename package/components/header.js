@@ -1,8 +1,19 @@
 import Link from "next/link";
 import { title, tagline, description, headerNavLinks } from "../kbt.settings";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useState } from "react";
+import { useRouter } from "next/router";
 
 export default function Header() {
+  const router = useRouter();
+  const [search, setSearch] = useState("");
+  const onSubmit = (e) => {
+    e.preventDefault();
+    router.push({
+      pathname: "/search",
+      query: { keyword: search },
+    });
+  };
   return (
     <header className="flex-shrink-0">
       <div className="bg-primary-900">
@@ -42,12 +53,16 @@ export default function Header() {
                 {description}
               </label>
             )}
-            <input
-              type="text"
-              className="mt-2 w-full rounded focus:outline-none focus:ring ring-primary-500 text-lg py-3 px-4 shadow-lg"
-              placeholder="Search for articles..."
-              name="search"
-            ></input>
+            <form onSubmit={onSubmit}>
+              <input
+                type="text"
+                className="mt-2 w-full rounded focus:outline-none focus:ring ring-primary-500 text-lg py-3 px-4 shadow-lg"
+                placeholder="Search for articles..."
+                value={search}
+                onChange={(e) => setSearch(e.target.value)}
+                name="search"
+              />
+            </form>
           </div>
         </div>
       </div>
