@@ -79,6 +79,6 @@ export function getCategoryArticles(slug) {
   const articles = getArticleSlugs()
     .filter((path) => path.folder === slug)
     .map((path) => getArticleBySlug(path.folder, path.file))
-    .sort((x, y) => (x.date > y.date ? -1 : 1));
+    .sort((x, y) => (x.order < y.order ? -1 : 1));
   return articles;
 }

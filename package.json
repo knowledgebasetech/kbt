@@ -1,7 +1,8 @@
 {
   "private": true,
   "dependencies": {
-    "knowledgebasetech": "^0.0.8"
+    "knowledgebasetech": "^0.0.8",
+    "remark-gfm": "^3.0.1"
   },
   "scripts": {
     "dev": "cd .knowledgeBase && npm run dev",
