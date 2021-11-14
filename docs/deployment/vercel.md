@@ -6,16 +6,6 @@ authors: ["bodhi"]
 summary: "There are multiple ways to make deployments with Vercel; these include via a Vercel for Git, Deploy Hooks, Vercel CLI, and the Vercel API."
 ---
 
----
-
-title: "How to deploy Knowledgebase app to Netlify?"
-date: "2021-11-14"
-draft: false
-authors: ["bodhi"]
-summary: "There are multiple ways to make deployments with Netlify; You can use the netlify GUI to deploy the site"
-
----
-
 # How to deploy Knowledgebase app to Vercel?
 
 ### Create a GitHub repository

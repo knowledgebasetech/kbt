@@ -30,3 +30,12 @@ Open [http://localhost:3000](http://localhost:3000) and checkout the app.
 ## Documentation
 
 Checkout out [knowledgebase.tech](http://knowledgebase.tech/) for detailed documentation and usage instructions.
+
+## Demo Video
+
+[Youtube Video](https://www.youtube.com/watch?v=gnVmE_M3JZQ)
+
+## Deployment
+
+- [Deployment with Netlify](https://knowledgebase.tech/deployment/netlify)
+- [How to deploy Knowledgebase app to Vercel?](https://knowledgebase.tech/deployment/vercel)
