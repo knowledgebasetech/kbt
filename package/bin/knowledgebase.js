@@ -43,6 +43,7 @@ cli
     shell.exec(`cp -a node_modules/knowledgebasetech/. .knowledgeBase/`);
     shell.exec(`cd .knowledgeBase && npm i`);
     shell.exec(`cd .knowledgeBase && ln -s ../docs docs`);
+    shell.exec(`cd .knowledgeBase && ln -s ../kbt.settings.js kbt.settings.js`);
     shell.exec(`cd .knowledgeBase && npm run build`);
     console.log("Wohoo!! Build Complete");
   });
@@ -54,6 +55,7 @@ cli
     shell.exec(`cp -a node_modules/knowledgebasetech/. .knowledgeBase/`);
     shell.exec(`cd .knowledgeBase && npm i`);
     shell.exec(`cd .knowledgeBase && ln -s ../docs docs`);
+    shell.exec(`cd .knowledgeBase && ln -s ../kbt.settings.js kbt.settings.js`);
     shell.exec(`cd .knowledgeBase && npm run export`);
     console.log("Wohoo!! Export Complete");
   });
