@@ -1,4 +1,4 @@
-# KnowledgeBase.Tech
+# @knowledgebase/docs
 
 ## A quick overview
 

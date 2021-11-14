@@ -51,7 +51,7 @@ export default function Home({ categories }) {
                         </div>
                       </div>
                       <p className="text-sm text-gray-600">
-                        Authors: John Doe,Alex Kim, Jennie kayle and 2 others
+                        Authors: Bodhi, Gigin, Vinu and 2 others
                       </p>
                     </div>
                     <div className="col-span-4 flex justify-end">
