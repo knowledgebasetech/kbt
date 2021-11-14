@@ -26,7 +26,7 @@ export default function Header() {
                   target="_blank"
                   rel="noopener"
                   href={link}
-                  className="px-3 py-2 border border-transparent rounded flex space-x-2 items-center bg-primary-100 bg-opacity-10 hover:bg-opacity-20 hover:shadow-lg transition"
+                  className="px-3 py-2 border border-transparent rounded flex space-x-2 items-center bg-primary-100 bg-opacity-10 text-sm hover:bg-opacity-20 hover:shadow-lg transition"
                 >
                   <span>
                     <FontAwesomeIcon icon={icon || "external-link-alt"} />
@@ -38,7 +38,7 @@ export default function Header() {
           </div>
           <div className="pt-6 pb-4">
             {description && (
-              <label className="inline-block md:pt-6 text-primary-100">
+              <label className="inline-block md:pt-6 text-gray-100">
                 {description}
               </label>
             )}

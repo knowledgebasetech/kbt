@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function BreadCrumbs({ category, article }) {
   return (
-    <nav className="flex" aria-label="Breadcrumb">
+    <nav className="flex px-4 sm:px-4 lg:px-0" aria-label="Breadcrumb">
       <ol role="list" className="flex items-center space-x-4">
         <li>
           <div>

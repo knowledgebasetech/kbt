@@ -8,14 +8,14 @@ export default function Home({ categories }) {
   return (
     <Layout>
       <main className="flex flex-col items-center justify-center w-full flex-1 px-4 md:px-20 text-center">
-        <div className="flex flex-wrap items-center justify-around max-w-4xl sm:w-full">
+        <div className="flex flex-wrap space-y-6 items-center justify-around max-w-4xl sm:w-full">
           {categories.map((category) => (
             <Link
               key={category.folder}
               as={`/${category.folder}`}
               href="/[categorySlug]/"
             >
-              <div className="p-6 mt-6 cursor-pointer text-left md:grid md:grid-cols-12 gap-8 w-full bg-white rounded-lg focus:text-primary-600 shadow-md focus:ring focus:ring-offset-2 ring-indigo-500 hover:shadow-lg transition">
+              <div className="p-6 cursor-pointer text-left md:grid md:grid-cols-12 gap-8 w-full bg-white rounded-lg focus:text-primary-600 shadow-md focus:ring focus:ring-offset-2 ring-indigo-500 hover:shadow-lg transition">
                 <div className="col-span-3 p-4 flex items-center justify-center rounded-lg bg-gray-50 text-gray-400">
                   {category.icon && (
                     <div className="text-4xl md:text-6xl p-4 flex items-center justify-center">

@@ -17,32 +17,40 @@ export default function Post({ category, articles }) {
   }
   return (
     <Layout>
-      <div className="max-w-4xl mt-6 sm:w-full mx-auto">
+      <div className="max-w-4xl sm:w-full mx-auto">
         <BreadCrumbs category={category} article={null} />
-        <div className="p-6 mt-6 text-left border w-full bg-gray-200 rounded-xl flex">
-          {category.icon && (
-            <div className="text-3xl font-bold p-10 flex items-center justify-center">
-              <FontAwesomeIcon icon={category.icon} />
-            </div>
-          )}
-          <div>
-            <h3 className="text-2xl font-bold">{category.title}</h3>
-            <p className="mt-4 text-xl">{category.summary}</p>
-          </div>
-        </div>
-        <div className="flex flex-wrap items-center justify-around">
-          {articles.map((article) => (
-            <Link
-              key={article.slug}
-              as={`/${category.folder}/${article.slug}`}
-              href="/[categorySlug]/[slug]"
-            >
-              <div className="p-6 mt-6 text-left border w-full bg-white rounded-xl hover:text-primary-600 focus:text-primary-600">
-                <h3 className="text-2xl font-bold">{article.title}</h3>
-                <p className="mt-4 text-xl">{article.summary}</p>
+        <div className="bg-gray-100 p-4 md:p-6 rounded-xl mt-4">
+          <div className="flex items-start md:items-stretch flex-col md:grid md:grid-cols-12 md:gap-8 text-left w-full bg-gray-100 rounded-xl">
+            {category.icon && (
+              <div className="col-span-3 bg-gray-50 text-4xl md:text-5xl text-gray-400 p-4 flex w-full md:w-auto items-start md:items-center justify-center rounded-lg">
+                <FontAwesomeIcon icon={category.icon} />
               </div>
-            </Link>
-          ))}
+            )}
+            <div className="col-span-9 mt-3 md:mt-0">
+              <h3 className="text-xl md:text-2xl font-medium">
+                {category.title}
+              </h3>
+              <p className="mt-3 text-gray-700">{category.summary}</p>
+            </div>
+          </div>
+          <div className="flex flex-wrap items-center justify-around bg-white shadow-md divide-y divide-gray-200 mt-6 lg:rounded-lg overflow-hidden">
+            {articles.map((article) => (
+              <Link
+                key={article.slug}
+                as={`/${category.folder}/${article.slug}`}
+                href="/[categorySlug]/[slug]"
+              >
+                <div className="w-full bg-white py-6 focus:text-primary-600 cursor-pointer hover:ring-inset hover:ring-primary-500">
+                  <div className="relative before:absolute before:inset-y-0 before:w-1 before:rounded-r before:bg-primary-400">
+                    <h3 className="text-xl font-medium text-primary-500 px-6">
+                      {article.title}
+                    </h3>
+                  </div>
+                  <p className="px-6 mt-2 text-gray-600">{article.summary}</p>
+                </div>
+              </Link>
+            ))}
+          </div>
         </div>
       </div>
     </Layout>
