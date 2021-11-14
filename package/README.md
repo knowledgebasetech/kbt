@@ -1,22 +1,32 @@
-# @knowledgebase/docs
+# KnowledgeBase.Tech
 
-The knowledge base app is a fully configurable modern open source knowledge base management system.
+## A quick overview
 
-# Create a new APP
+⚡️ KnowledgeBase will help you ship a beautiful documentation site in no time.
 
-You can start a new project by running the `npx` command with a project name.
+💸 Building a custom tech stack is expensive. Instead, focus on your content and just write Markdown files.
 
-```
-npx knowledgebasetech init _project_name_
-```
+💥 Ready for more? Use advanced features like versioning, search and theme customizations.
 
-The will create a new project with project name provided.
+🧐 KnowledgeBase is a static-site generator. It builds a single-page application with a fast client-side navigation, leveraging the full power of `NextJs` to make your site interactive.
 
-# Running the app in local
+# Quick Install
 
-The app depends on `NextJs` for rendering the pages.
-You can start the development environment by running the following command.
+Install Node.js and create a new KnowledgeBase site:
 
 ```
+npx knowledgebasetech@latest init my-website
+```
+
+Start the site:
+
+```
+cd my-website
 npm run dev
 ```
+
+Open [http://localhost:3000](http://localhost:3000) and checkout the app.
+
+## Documentation
+
+Checkout out [knowledgebase.tech](http://knowledgebase.tech/) for detailed documentation and usage instructions.
