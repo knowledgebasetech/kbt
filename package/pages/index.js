@@ -62,7 +62,7 @@ export default function Home({ categories }) {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          class="w-6 h-6"
+                          className="w-6 h-6"
                           viewBox="0 0 16 16"
                         >
                           <path

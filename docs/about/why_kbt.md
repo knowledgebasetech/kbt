@@ -1,12 +1,10 @@
 ---
-title: 'What is Knowledge Base Tech?'
-date: '2021-10-11'
+title: "What are the use cases for Knowledge Base?"
+date: "2021-11-14"
+order: 2
 draft: false
-authors: ['bodhi']
-summary: 'Lorem markdownum mulcet sepulcro superat _in_ est factum meliore ignarus in
-stupuit illa tibi timens relatu **et omnia**! Ille cubito limen _sonuere
-altera_, serpentis gemitus et exsultat stemus. Ut solitaeque fama; tunc suo est
-cultros genitas longis, aequor ira habebat balatus harenas resumere. Olor quae'
+authors: ["bodhi"]
+summary: "A knowledge base is a collection of articles that provide useful answers, recommendations, and other vital information about your product or service that customers can find in one convenient spot. It's the single source of truth for your consumers while they're learning how to use your product or service, and it's a perfect strategy to empower them to fix their own problems with self-service support."
 ---
 
 # What is Knowledge Base?
@@ -29,7 +27,7 @@ You can help your customers find the answers they need while also saving your su
 6. _Better productivity_
 7. _Better customer retention_
    Since knowledge base has the most important required information, it automatically increases customer experience, hence better customer retention.
-8. ### _Quick resolution to customer problems_
+8. _Quick resolution to customer problems_
    Whenever a customer searches for a resolution, a knowledge base immediately returns with articles discussing the same problem and its resolution, making it almost an instant resolution to their problem.
 9. _You have all your useful information in one place_
    A single place to document all the information.
