@@ -18,7 +18,7 @@ export default function Post({ article, category }) {
   return (
     <Layout>
       <div className="max-w-4xl sm:w-full mx-auto">
-        <BreadCrumbs category={category} article={category} />
+        <BreadCrumbs category={category} article={article} />
       </div>
       <RenderArticle article={article}></RenderArticle>
     </Layout>

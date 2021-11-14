@@ -22,7 +22,7 @@ export default function Post({ category, articles }) {
         <div className="bg-gray-100 p-4 md:p-6 rounded-xl mt-4">
           <div className="flex items-start md:items-stretch flex-col md:grid md:grid-cols-12 md:gap-8 text-left w-full bg-gray-100 rounded-xl">
             {category.icon && (
-              <div className="col-span-3 bg-gray-50 text-4xl md:text-5xl text-gray-400 p-4 flex w-full md:w-auto items-start md:items-center justify-center rounded-lg">
+              <div className="col-span-3 bg-gray-50 text-4xl md:text-5xl text-primary-400 p-4 flex w-full md:w-auto items-start md:items-center justify-center rounded-lg">
                 <FontAwesomeIcon icon={category.icon} />
               </div>
             )}

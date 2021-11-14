@@ -6,4 +6,7 @@ module.exports = {
     { title: "Github", link: "/about", icon: "code-branch" },
     { title: "Go to Knowledgebase", link: "/" },
   ],
+  colors: {
+    primary: "cyan",
+  },
 };

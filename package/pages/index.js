@@ -16,7 +16,7 @@ export default function Home({ categories }) {
               href="/[categorySlug]/"
             >
               <div className="p-6 cursor-pointer text-left md:grid md:grid-cols-12 gap-8 w-full bg-white rounded-lg focus:text-primary-600 shadow-md focus:ring focus:ring-offset-2 ring-indigo-500 hover:shadow-lg transition">
-                <div className="col-span-3 p-4 flex items-center justify-center rounded-lg bg-gray-50 text-gray-400">
+                <div className="col-span-3 p-4 flex items-center justify-center rounded-lg bg-gray-50 text-primary-400">
                   {category.icon && (
                     <div className="text-4xl md:text-6xl p-4 flex items-center justify-center">
                       <FontAwesomeIcon icon={category.icon} />
