@@ -18,8 +18,18 @@ export default function Post({ category, articles }) {
   return (
     <Layout>
       <div className="max-w-4xl sm:w-full mx-auto">
+        <div>
+          Showing search results for{" "}
+          <span className="font-bold">{keyword}</span>
+        </div>
         <div className="bg-gray-100 p-4 md:p-6 rounded-xl mt-4">
           <div className="flex flex-wrap items-center justify-around bg-white shadow-md divide-y divide-gray-200 mt-6 lg:rounded-lg overflow-hidden">
+            {filteredArticles.length === 0 && (
+              <div className="py-10">
+                No results found for the search term{" "}
+                <span className="font-bold">{keyword}</span>
+              </div>
+            )}
             {filteredArticles.map((article) => (
               <Link
                 key={article.slug}

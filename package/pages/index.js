@@ -51,7 +51,7 @@ export default function Home({ categories }) {
                         </div>
                       </div>
                       <p className="text-sm text-gray-600">
-                        Authors: John Doe,Alex Kim, Jennie kayle and 2 others
+                        Authors: Bodhi, Gigin, Vinu and 2 others
                       </p>
                     </div>
                     <div className="col-span-4 flex justify-end">
@@ -62,7 +62,7 @@ export default function Home({ categories }) {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          class="w-6 h-6"
+                          className="w-6 h-6"
                           viewBox="0 0 16 16"
                         >
                           <path

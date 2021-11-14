@@ -1,6 +1,41 @@
-# kbt
-Modern open-source knowledge base using markdown
+# KnowledgeBase.Tech
 
-# Wireframe 
-![image](https://user-images.githubusercontent.com/14979190/141607202-6b8884ac-19be-4a3e-a700-b82a8e70b2ff.png)
+## A quick overview
 
+⚡️ KnowledgeBase will help you ship a beautiful documentation site in no time.
+
+💸 Building a custom tech stack is expensive. Instead, focus on your content and just write Markdown files.
+
+💥 Ready for more? Use advanced features like versioning, search and theme customizations.
+
+🧐 KnowledgeBase is a static-site generator. It builds a single-page application with a fast client-side navigation, leveraging the full power of `NextJs` to make your site interactive.
+
+# Quick Install
+
+Install Node.js and create a new KnowledgeBase site:
+
+```
+npx knowledgebasetech@latest init my-website
+```
+
+Start the site:
+
+```
+cd my-website
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) and checkout the app.
+
+## Documentation
+
+Checkout out [knowledgebase.tech](http://knowledgebase.tech/) for detailed documentation and usage instructions.
+
+## Demo Video
+
+[Youtube Video](https://www.youtube.com/watch?v=gnVmE_M3JZQ)
+
+## Deployment
+
+- [Deployment with Netlify](https://knowledgebase.tech/deployment/netlify)
+- [How to deploy Knowledgebase app to Vercel?](https://knowledgebase.tech/deployment/vercel)

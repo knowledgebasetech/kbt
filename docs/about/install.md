@@ -1,4 +1,13 @@
-# @knowledgebase/docs
+---
+title: "How to setup a Knowledge Base for your org?"
+date: "2021-11-14"
+draft: false
+order: 1
+authors: ["bodhi"]
+summary: "KnowledgeBase is a static-site generator. It builds a single-page application with a fast client-side navigation, leveraging the full power of `NextJs` to make your site interactive."
+---
+
+# How to setup a Knowledge Base for your org?
 
 ## A quick overview
 
@@ -26,7 +35,3 @@ npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) and checkout the app.
-
-## Documentation
-
-Checkout out [knowledgebase.tech](http://knowledgebase.tech/) for detailed documentation and usage instructions.

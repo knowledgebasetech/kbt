@@ -8,48 +8,51 @@ summary: "There are multiple ways to make deployments with Vercel; these include
 
 # How to deploy Knowledgebase app to Vercel?
 
-## Fama obnoxia enim gelidos addenda praeferret luce
+### Create a GitHub repository
 
-Lorem markdownum mulcet sepulcro superat _in_ est factum meliore ignarus in
-stupuit illa tibi timens relatu **et omnia**! Ille cubito limen _sonuere
-altera_, serpentis gemitus et exsultat stemus. Ut solitaeque fama; tunc suo est
-cultros genitas longis, aequor ira habebat balatus harenas resumere. Olor quae
-tenebat pisces: Iphis, et manu solantia incenduntque videri caput bene: [dabunt
-artus](http://posset.io/sustineantostendens), tabellas. Oppida patrumque
-_timorque de Ulixis_ non [sonitum](http://per.org/) suscitat sermone.
+Before you can deploy your site to Netlify, you'll need push your app to a Git Repository. First off you can initialize the repository with the following command:
 
-## Moverat mecum et traxit tutus vinaque
+    git init
 
-Rustica et, sive qua liquitur cui rugis **rursus carmine tabuit** erat [quod
-in](http://ipse.net/rogant-precari) fidissima filia. Et terribilesque nunc
-vultumque consumitis coram, moventem obvia et aris quoniam: patiuntur
-celebrantur tracto. Alto peream Penthea indicio protinus non. Munus manifesta
-prius, tandem eheu gaudenti, per, in se mihi in aciem.
+Now you need to create a new repository in GitHub. You can do this by going to [GitHub](https://github.com/new). Once you create the repository, GitHub will show you the commands to push your app to the repository. It would look something like this:
 
-    javascript.cyberspaceWave(ergonomics_volume);
-    mediaWaveformIbm += text_sound_hdtv;
-    netbios_sequence = num_case.scareware_bps.network(ip_exploit, 5,
-            megabitGnuFile) - pci + recycle;
-    fragmentation += 2;
+    echo "# kb_name" >> README.md
+    git init
+    git add README.md
+    git commit -m "first commit"
+    git branch -M main
+    git remote add origin git@github.com:username/kb_name.git
+    git push -u origin main
 
-## Sed at metuendus voce
+### Push your app to GitHub
 
-Repugnat fugere reliquit, ego tenues accipit cur longius, ex dato fuisset venit
-totum tandem. Ab umida situsque, in bella ingreditur tu patent quas.
+In order to push the knowledge base app to GitHub, you can use the following command:
 
-Vindicis atricolor nec quidem iuvenes ipse non in volucrum crinem et fiunt.
-Mitis me voce iactanti exsiluere dicere, tectis; adunca es auctore ad emicuit et
-cuncta inania, cui. Sua arma pectus. Harenae utque tenentis hastilia apte quae
-suae sed, virum, diu mero caede turba, exaudi opus posset.
+    git add .
+    git commit -m "Knowledge Base Content"
+    git push -u origin main
 
-## Te pectora neque Oechalidum coniunx domini deprendere
+### Deploy to Vercel
 
-Mater _aure Ixiona thalamos_ venti. Cum labor vindicet digiti hac reverentia
-bracchia Deucalion esse genitoris.
+Now your app is ready to deploy to Vercel. You can do this by going to [Vercel](https://www.vercel.com/). Once you're logged in, you can use the button "New Site from Git" to deploy your app. In the wizard, you can select "GitHub" to connect your GitHub account and select the repository you created earlier.
 
-Notas unda pabula sit coronatae, pollice antri, sparsit ut esse aede **inritare
-patet**. Castris grave viri volvuntur illum: tuum quot gloria ex Me suos habet,
-luctatur dicemur supplex excipis! Praebuit quam adhuc posse sine **relatis
-populator modo** dum aevo non diem. Stravere parta duritiem **est**, conplevit,
-invictumque ferre gravis, pone Parnasosque prius sua litoris. Vertice periturae
-et ignibus procul quod sidus omnipotens, quos cessere.
+Once you select the repository, you'll have to fill in a form with the following details.
+
+- You can set the build command to "npm run export"
+- You can specify the build directory to ".build/"
+
+Once you've specified the above, simply click on the "Deploy" button to deploy your app to Vercel.
+
+Vercel will deploy your app and then show the URL of your app.
+
+Once the app is deployed, you can use Vercel's Custom Domain feature to point your own domain to the app.
+
+### Deploy Updates
+
+Further when you make changes to your app, you can deploy your app to Vercel by running the following command:
+
+    git add .
+    git commit -m "Update"
+    git push origin main
+
+When you push to your repository, Vercel will automatically deploy your app to the Vercel site.

@@ -1,6 +1,6 @@
 {
   "name": "knowledgebasetech",
-  "version": "0.0.9",
+  "version": "0.0.12",
   "description": "Modern open-source knowledge base builder",
   "keywords": [
     "knowledge base",
@@ -42,6 +42,7 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "rehype-stringify": "^9.0.2",
+    "remark-gfm": "^3.0.1",
     "remark-parse": "^10.0.0",
     "remark-rehype": "^10.0.1",
     "shelljs": "^0.8.4",
