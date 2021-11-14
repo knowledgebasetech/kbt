@@ -16,8 +16,8 @@ export default function Header() {
   };
   return (
     <header className="flex-shrink-0">
-      <div className="bg-primary-900">
-        <div className="max-w-4xl container mx-auto py-6 px-4 md:px-0 ">
+      <div className="bg-primary-900 hero-header relative">
+        <div className="max-w-4xl container mx-auto py-6 px-4 md:px-0 relative z-10 ">
           <div className="flex flex-col-reverse md:flex-row md:justify-between items-center">
             <h1 className="text-white font-bold text-xl pt-4 md:pt-0">
               <Link href="/">

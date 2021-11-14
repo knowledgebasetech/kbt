@@ -10,7 +10,7 @@ module.exports = {
     },
   ],
   colors: {
-    primary: "cyan",
+    primary: "blue",
     gray: "coolGray",
   },
   copyRightText: "© 2021 knowledgebase.tech | All rights reserved.",

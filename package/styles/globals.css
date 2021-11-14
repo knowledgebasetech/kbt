@@ -11,3 +11,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 }
+
+.hero-header:before {
+  content: '';
+  background-image: url("/images/header-bg.svg");
+  background-repeat: repeat;
+  @apply absolute h-full w-full z-0 bg-cover mix-blend-soft-light opacity-20;
+}
