@@ -3,7 +3,7 @@ import { join } from "path";
 import matter from "gray-matter";
 
 const root = join(process.cwd(), "docs");
-const CATEGORY_FILE_NAME = "_index.md";
+const CATEGORY_FILE_NAME = "README.md";
 
 export function formatSlug(slug) {
   return slug.replace(/\.md$/, "");
@@ -42,6 +42,7 @@ export function getArticleBySlug(folder, file) {
 export function getCategoriesBySlug(folder) {
   const fullPath = join(root, `/${folder}/${CATEGORY_FILE_NAME}`);
   const { data, content } = matter(fs.readFileSync(fullPath, "utf8"));
+  const files = fs.readdirSync(`${root}/${folder}`);
 
   return {
     folder: folder,
@@ -49,6 +50,7 @@ export function getCategoriesBySlug(folder) {
     slug: formatSlug(CATEGORY_FILE_NAME),
     fullPath: fullPath,
     content: content,
+    articleCount: files.length - 1,
     ...data,
   };
 }
@@ -70,7 +72,7 @@ export function getCategories() {
     }
   });
 
-  return categories;
+  return categories.sort((x, y) => (x.order < y.order ? -1 : 1));
 }
 
 export function getCategoryArticles(slug) {

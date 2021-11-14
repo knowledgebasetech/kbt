@@ -56,7 +56,7 @@ export default function Home({ categories }) {
                     </div>
                     <div className="col-span-4 flex justify-end">
                       <button className="hidden md:inline-flex items-center bg-gray-200 rounded-lg px-3 py-1.5 font-semibold space-x-2 hover:bg-indigo-50 hover:text-primary-600 transition">
-                        <span>4 Articles</span>
+                        <span>{category.articleCount} Articles</span>
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="16"
