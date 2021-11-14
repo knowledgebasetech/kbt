@@ -1,7 +1,7 @@
 {
   "private": true,
   "dependencies": {
-    "knowledgebasetech": "^0.0.4"
+    "knowledgebasetech": "^0.0.7"
   },
   "scripts": {
     "dev": "cd .knowledgeBase && npm run dev",
