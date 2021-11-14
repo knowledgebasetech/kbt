@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { useRouter } from "next/router";
+import { title, tagline, description, headerNavLinks } from "../kbt.settings";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Header() {
   return (
@@ -10,44 +11,37 @@ export default function Header() {
             <h1 className="text-white font-bold text-xl pt-4 md:pt-0">
               <Link href="/">
                 <a>
-                  Knowledgebase
-                  <span className="font-light ml-2 pl-2 border-l-2">
-                    Help Center
-                  </span>
+                  {title}
+                  {tagline && (
+                    <span className="font-light ml-2 pl-2 border-l-2">
+                      {tagline}
+                    </span>
+                  )}
                 </a>
               </Link>
             </h1>
             <div className="flex space-x-5 text-white items-center">
-              <a
-                target="_blank"
-                rel="noopener"
-                href="https://Knowledgebase.tech/"
-                className="px-3 py-2 border border-transparent rounded flex space-x-2 items-center bg-primary-100 bg-opacity-10 hover:bg-opacity-20 hover:shadow-lg transition"
-              >
-                <span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="1.5"
-                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                    />
-                  </svg>
-                </span>
-                <span>Go to Knowledgebase</span>
-              </a>
+              {headerNavLinks.map(({ title, link, icon }) => (
+                <a
+                  target="_blank"
+                  rel="noopener"
+                  href={link}
+                  className="px-3 py-2 border border-transparent rounded flex space-x-2 items-center bg-primary-100 bg-opacity-10 hover:bg-opacity-20 hover:shadow-lg transition"
+                >
+                  <span>
+                    <FontAwesomeIcon icon={icon || "external-link-alt"} />
+                  </span>
+                  <span>{title}</span>
+                </a>
+              ))}
             </div>
           </div>
           <div className="pt-6 pb-4">
-            <label className="inline-block md:pt-6 text-primary-100">
-              A simple tool to build knowledge base
-            </label>
+            {description && (
+              <label className="inline-block md:pt-6 text-primary-100">
+                {description}
+              </label>
+            )}
             <input
               type="text"
               className="mt-2 w-full rounded focus:outline-none focus:ring ring-primary-500 text-lg py-3 px-4 shadow-lg"
