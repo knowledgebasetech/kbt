@@ -29,7 +29,7 @@ export default function Home({ categories }) {
                   </h3>
                   <p className="mt-2 text-gray-600">{category.summary}</p>
                   <div className="md:grid md:grid-cols-12 items-start justify-between space-x-2 pt-6">
-                    <div className="col-span-8 md:flex items-start space-y-2 md:space-y-0 md:space-x-2">
+                    <div className="col-span-8 md:flex items-start md:items-center space-y-2 md:space-y-0 md:space-x-2">
                       <div className="flex -space-x-1 flex-shrink-0 relative z-0 pt-1">
                         <img
                           className="inline-block relative z-30 h-8 w-8 rounded-full ring-2 ring-white object-center object-cover"

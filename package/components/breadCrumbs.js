@@ -7,7 +7,7 @@ export default function BreadCrumbs({ category, article }) {
         <li>
           <div>
             <Link href="/">
-              <span className="text-gray-400 hover:text-gray-500">
+              <span className="text-gray-400 hover:text-gray-500 cursor-pointer">
                 <svg
                   className="flex-shrink-0 h-5 w-5"
                   xmlns="http://www.w3.org/2000/svg"
@@ -39,7 +39,7 @@ export default function BreadCrumbs({ category, article }) {
               />
             </svg>
             <Link as={`/${category.folder}`} href="/[categorySlug]">
-              <span className="ml-4 text-sm font-medium text-gray-500 hover:text-gray-700">
+              <span className="ml-4 text-sm font-medium text-gray-500 hover:text-gray-700 cursor-pointer">
                 {category.title}
               </span>
             </Link>
@@ -66,7 +66,7 @@ export default function BreadCrumbs({ category, article }) {
                 as={`/${article.folder}/${article.slug}`}
                 href="[categorySlug]/[slug]"
               >
-                <span className="ml-4 text-sm font-medium text-gray-500 hover:text-gray-700">
+                <span className="ml-4 text-sm font-medium text-gray-500 hover:text-gray-700 cursor-pointer">
                   {article.title}
                 </span>
               </Link>
