@@ -38,7 +38,7 @@ export default function Post({ category, articles }) {
               >
                 <div className="w-full bg-white py-6 focus:text-primary-600 cursor-pointer hover:ring-inset hover:ring-primary-500">
                   <div className="relative before:absolute before:inset-y-0 before:w-1 before:rounded-r before:bg-primary-400">
-                    <h3 className="text-xl font-medium text-primary-500 px-6">
+                    <h3 className="text-xl font-medium text-primary-800 px-6">
                       {article.title}
                     </h3>
                   </div>
