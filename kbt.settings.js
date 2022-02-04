@@ -13,5 +13,5 @@ module.exports = {
     primary: "indigo",
     gray: "coolGray",
   },
-  copyRightText: "© 2021 knowledgebase.tech | All rights reserved.",
+  copyRightText: "© 2022 knowledgebase.tech | All rights reserved.",
 };

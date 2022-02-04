@@ -32,7 +32,7 @@ module.exports = {
       icon: "code-branch",
     },
   ],
-  copyRightText: "© 2021 knowledgebase.tech | All rights reserved.",
+  copyRightText: "© 2022 knowledgebase.tech | All rights reserved.",
   colors: {
     primary: "indigo",
     secondary: "blue",

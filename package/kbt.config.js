@@ -8,7 +8,7 @@ module.exports = {
   headerNavLinks: settings.headerNavLinks,
   copyRightText:
     settings.copyRightText ||
-    "© 2021 knowledgebase.tech | All rights reserved.",
+    "© 2022 knowledgebase.tech | All rights reserved.",
   colors: {
     primary: settings?.colors?.primary || "indigo",
     secondary: settings?.colors?.secondary || "blue",
