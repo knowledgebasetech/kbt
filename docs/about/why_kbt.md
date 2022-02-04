@@ -3,7 +3,7 @@ title: "What are the use cases for Knowledge Base?"
 date: "2021-11-14"
 order: 2
 draft: false
-authors: ["bodhi"]
+authors: ["bodhish"]
 summary: "A knowledge base is a collection of articles that provide useful answers, recommendations, and other vital information about your product or service that customers can find in one convenient spot. It's the single source of truth for your consumers while they're learning how to use your product or service, and it's a perfect strategy to empower them to fix their own problems with self-service support."
 ---
 

@@ -31,27 +31,21 @@ export default function Home({ categories }) {
                   <div className="md:grid md:grid-cols-12 items-start justify-between space-x-2 pt-6">
                     <div className="col-span-8 md:flex items-start md:items-center space-y-2 md:space-y-0 md:space-x-2">
                       <div className="flex -space-x-1 flex-shrink-0 relative z-0 pt-1">
-                        <img
-                          className="inline-block relative z-30 h-8 w-8 rounded-full ring-2 ring-white object-center object-cover"
-                          src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=988&q=80"
-                          alt=""
-                        />
-                        <img
-                          className="inline-block relative z-20 h-8 w-8 rounded-full ring-2 ring-white object-center object-cover"
-                          src="https://images.unsplash.com/photo-1557296387-5358ad7997bb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1057&q=80"
-                          alt=""
-                        />
-                        <img
-                          className="inline-blockrelative z-10 h-8 w-8 rounded-full ring-2 ring-white object-center object-cover"
-                          src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=987&q=80"
-                          alt=""
-                        />
-                        <div className="inline-flex relative z-0 h-8 w-8 bg-gray-500 text-xs text-white justify-center items-center rounded-full ring-2 ring-white object-center object-cover">
-                          +3
-                        </div>
+                        {category.authors.slice(0, 3).map((author) => (
+                          <img
+                            className="inline-block relative z-30 h-8 w-8 rounded-full ring-2 ring-white object-center object-cover"
+                            src={`https://github.com/${author}.png`}
+                            alt={author}
+                          />
+                        ))}
+                        {category.authors.length > 3 && (
+                          <div className="inline-flex relative z-0 h-8 w-8 bg-gray-500 text-xs text-white justify-center items-center rounded-full ring-2 ring-white object-center object-cover">
+                            +{category.authors.length - 3}
+                          </div>
+                        )}
                       </div>
                       <p className="text-sm text-gray-600">
-                        Authors: Bodhi, Gigin, Vinu and 2 others
+                        by: {category.authors.join(", ")}
                       </p>
                     </div>
                     <div className="col-span-4 flex justify-end">

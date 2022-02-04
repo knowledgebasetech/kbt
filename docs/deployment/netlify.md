@@ -2,7 +2,7 @@
 title: "How to deploy Knowledgebase app to Netlify?"
 date: "2021-11-14"
 draft: false
-authors: ["bodhi"]
+authors: ["bodhish"]
 summary: "There are multiple ways to make deployments with Netlify; You can use the netlify GUI to deploy the site"
 ---
 

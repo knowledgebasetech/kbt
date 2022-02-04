@@ -2,7 +2,7 @@
 title: "How to change theme for Kbt?"
 date: "2021-11-14"
 draft: false
-authors: ["bodhi"]
+authors: ["bodhish"]
 order: 4
 summary: "How can we change the color theme for knowledge base app. How easy is it to configure the app."
 ---

@@ -16,7 +16,7 @@ Inside each section folder, you can create a `README.md` file that contains the 
 ```md
 ---
 title: "How to configure Knowledge Base app?"
-authors: ["bodhi"]
+authors: ["bodhish"]
 draft: false
 order: 1
 icon: "cog"

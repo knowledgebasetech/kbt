@@ -2,7 +2,7 @@
 title: "How to change site title and meta details?"
 date: "2021-11-14"
 draft: false
-authors: ["bodhi"]
+authors: ["bodhish"]
 order: 5
 summary: "How can we change the site title and meta details for knowledge base app. How easy is it to configure the app."
 ---

@@ -2,7 +2,7 @@
 title: "How to create articles?"
 date: "2021-11-14"
 draft: false
-authors: ["bodhi"]
+authors: ["bodhish"]
 order: 2
 summary: "We can dig a bit in detail on how you can write an article about a topic using knowledgebase. Once you create a category or a section folder you can create markdown files inside it which holds the contents for the article."
 ---
@@ -29,7 +29,7 @@ checkout the following example for a better clarity.
 title: "How to create articles?"
 date: "2021-11-14"
 draft: false
-authors: ["bodhi"]
+authors: ["bodhish"]
 summary: "We can dig a bit in detail on how you can write an article about a topic using knowledgebase."
 ---
 ```

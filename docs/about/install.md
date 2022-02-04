@@ -3,7 +3,7 @@ title: "How to setup a Knowledge Base for your org?"
 date: "2021-11-14"
 draft: false
 order: 1
-authors: ["bodhi"]
+authors: ["bodhish", "vinu"]
 summary: "KnowledgeBase is a static-site generator. It builds a single-page application with a fast client-side navigation, leveraging the full power of `NextJs` to make your site interactive."
 ---
 
