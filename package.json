@@ -1,7 +1,7 @@
 {
   "private": true,
   "dependencies": {
-    "knowledgebasetech": "^0.0.14",
+    "knowledgebasetech": "^0.0.15",
     "remark-gfm": "^3.0.1"
   },
   "scripts": {
