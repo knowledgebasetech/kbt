@@ -1,1 +1,0 @@
-../kbt.settings.js
